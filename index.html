@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <title>Age calculator app | Frontend Mentor</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <form action="#">
+                <div class="input-container">
+                    <div class="input-field">
+                        <lable class="label">Day</lable>
+                        <input
+                            type="number"
+                            placeholder="DD"
+                            class="input__day input"
+                        />
+                        <span class="empty">This field is required</span>
+                        <span class="invalid">Must be a valid day</span>
+                    </div>
+                    <div class="input-field">
+                        <lable class="label">Month</lable>
+                        <input
+                            type="number"
+                            placeholder="MM"
+                            class="input__month input"
+                        />
+                        <span class="empty">This field is required</span>
+                        <span class="invalid">Must be a valid month</span>
+                    </div>
+                    <div class="input-field">
+                        <lable class="label">Year</lable>
+                        <input
+                            type="number"
+                            placeholder="YYYY"
+                            class="input__year input"
+                        />
+                        <span class="empty">This field is required</span>
+                        <span class="invalid invalid-year"
+                            >Must be in the past</span
+                        >
+                    </div>
+                </div>
+                <button
+                    type="submit"
+                    aria-label="submit form"
+                    class="submit-btn"
+                >
+                    <img src="./assets/images/icon-arrow.svg" alt="" />
+                </button>
+            </form>
+            <section class="age-container">
+                <h1 class="age">
+                    <span class="age__year">- -</span> years
+                    <br />
+                    <span class="age__month">- -</span> months
+                    <br />
+                    <span class="age__day">- -</span> days
+                </h1>
+            </section>
+        </main>
+        <footer>
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                rel="noopener"
+                >Frontend Mentor</a
+            >. Coded by oluwarotimi comfort.
+        </footer>
+    </body>
+</html>
